@@ -15,14 +15,18 @@ public class LoginServlet extends HttpServlet{
 	// Method doGet() from HttpServlet class doc
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
      throws ServletException, IOException {
-		// Get parameter from the URL e.g http://mysite.com/?name=TEST
-		String name = request.getParameter("name");
-		// Set the attribute to be available for jsp  
-		request.setAttribute("name", name);
-		
-		// Method getRequestDispatcher() convert jsp file to Servlet (jsp is like template in django)
+		// Method getRequestDispatcher() convert jsp file to Servlet 
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
-	}
+	}	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+		     throws ServletException, IOException {
+		
+				request.setAttribute("name", request.getParameter("name"));
+				// Method getRequestDispatcher() convert jsp file to Servlet 
+				request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+
+			}
+	
 
 }

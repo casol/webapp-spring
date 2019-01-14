@@ -6,6 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here!</title>
 </head>
-<body>My first HttpServlet ${name}
+<body>
+Submitted data --> ${name}
+<form action="/login.do" method="post">
+	Enter your name: <input type="text" name="name"/> <input type="submit"/>
+</form>
 </body>
 </html>
