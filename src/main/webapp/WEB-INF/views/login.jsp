@@ -7,7 +7,7 @@
 </head>
 <body>
 	<p>${errorMessage}</p>
-	<form action="/login.do" method="POST">
+	<form action="/login" method="POST">
 		Name : <input name="name" type="text" /> Password : <input name="password" type="password" /> <input type="submit" />
 	</form>
 </body>

@@ -1,4 +1,4 @@
-package com.webapp;
+package com.krisswebapp.login;
 
 public class LoginService {
 	public boolean validateUser(String user, String password) {
