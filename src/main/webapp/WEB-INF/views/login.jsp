@@ -3,13 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here!</title>
+<title>Yahoo!!</title>
 </head>
 <body>
-Submitted data --> ${name}
-<form action="/login.do" method="post">
-	Enter your name: <input type="text" name="name"/> <input type="submit"/>
-</form>
+	<p>${errorMessage}</p>
+	<form action="/login.do" method="POST">
+		Name : <input name="name" type="text" /> Password : <input name="password" type="password" /> <input type="submit" />
+	</form>
 </body>
 </html>

@@ -3,10 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Success!</title>
+<title>Yahoo!!</title>
 </head>
 <body>
-	Welcome ${name}
+Welcome ${name}
 </body>
 </html>
