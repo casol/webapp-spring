@@ -1,5 +1,6 @@
 package com.krisswebapp.login;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,10 @@ import com.krisswebapp.login.LoginService;
 @Controller
 public class LoginController {
 	
-	LoginService service = new LoginService();
+	// dependency injection 
+	// Set the Service - Auto Wiring 
+	@Autowired
+	private LoginService loginService;
 		
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String showLoginPage() {
@@ -25,7 +29,7 @@ public class LoginController {
 	// Model -> passing between controller and view 
 	public String handleLoginRequest(@RequestParam String name, ModelMap model, @RequestParam String password) {
 		
-		if(!service.validateUser(name, password)) {		
+		if(!loginService.validateUser(name, password)) {		
 			model.put("errorMessage", "Invalid username or password");
 			return "login";		
 		} 

@@ -6,7 +6,7 @@
 <title>Yahoo!!</title>
 </head>
 <body>
-Your Todos are
+Your list todos:
 ${todos}
 </body>
 </html>
