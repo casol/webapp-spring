@@ -6,7 +6,14 @@
 <title>Yahoo!!</title>
 </head>
 <body>
+Hi ${name} <br>
+
 Your list todos:
 ${todos}
+
+<br>
+
+<a class="button" href="/add-todo">Add</a>
+
 </body>
 </html>

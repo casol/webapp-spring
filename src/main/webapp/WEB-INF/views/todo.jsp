@@ -6,7 +6,14 @@
 <title>Yahoo!!</title>
 </head>
 <body>
-Welcome ${name}. <br/>
-Now, you can <a href="/list-todos">manage your todos.</a>
+<h1>Add a Todo</h1>
+
+<form method="post">
+	<input name="desc" type="text"/>
+	<input type="submit" value="Add"/>
+
+</form>
+
+
 </body>
 </html>
