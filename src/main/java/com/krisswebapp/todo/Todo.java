@@ -14,6 +14,7 @@ public class Todo {
 	private Date targetDate;
 	private boolean isDone;
 	
+	// Default constructor for validation ?
 	public Todo() {
 		
 	}

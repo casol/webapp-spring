@@ -1,12 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Yahoo!!</title>
-</head>
-<body>
+<%@ include file="common/header.jspf"%>	
+<%@ include file="common/navigation.jspf"%>	
+<div class="container">
 Welcome ${name}. <br/>
 Now, you can <a href="/list-todos">manage your todos.</a>
-</body>
-</html>
+</div>
+<%@ include file="common/footer.jspf"%>	
