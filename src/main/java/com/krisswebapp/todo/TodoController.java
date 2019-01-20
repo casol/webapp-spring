@@ -48,9 +48,10 @@ public class TodoController {
 	public String listTodos(ModelMap model) {
 		
 		model.addAttribute("todos", service.retrieveTodos(retrieveLoggedUserName()));
-		return "list-todos";
+		return "list-todos";		
+		
 	}
-	
+
 		
 	private String retrieveLoggedUserName() {
 		Object principal = SecurityContextHolder.getContext()

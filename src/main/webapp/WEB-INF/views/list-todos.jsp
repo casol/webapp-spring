@@ -1,10 +1,12 @@
 	<%@ include file="common/header.jspf"%>	
 
 	<%@ include file="common/navigation.jspf"%>	
+	<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+	
 	<div class="container">
 		<p>Hi ${name}</p>
 		<table class="table table-striped">
-			<caption>Your Todos are</caption>
+			<caption>Your LIst </caption>
 			<thead>
 					<tr>
 						<th>Description</th>
